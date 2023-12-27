@@ -24,6 +24,7 @@ const TextEditor = () => {
     setTextHistory([...updatedTextHistory, newText]);
     console.log('updatedTextHistory ', updatedTextHistory)
     setCurrentStep(currentStep + 1);
+    setText(text+newText);
   };
 
   const undo = () => {
